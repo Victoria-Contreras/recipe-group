@@ -11,6 +11,7 @@ async function getMealRecipe() {
     const keyword = encodeURIComponent(localStorage.getItem('searchTerm'));
     const response = await fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
     const data = await response.json()
+    console.log(data)
     let mealIngredients = [];
     let mealMeasurements = [];
     const dataArray = Object.keys(data.meals[0]);
