@@ -126,6 +126,7 @@ displayDrinkImages(drinkImage)
 
 document.getElementById("drink-ingredients").style.display=""
 
+    document.getElementById('drink-recipe').scrollIntoView({ block: "center", behavior: 'smooth' })
 
 }
 //WHERE GETCOCKTAIL RECIPE FUNCTION ENDS//
